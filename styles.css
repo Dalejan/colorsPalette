@@ -1,0 +1,113 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Thin', sans-serif;
+    font-family: 'Roboto Light', sans-serif;
+    font-family: 'Roboto Medium', sans-serif;
+    font-family: 'Roboto Black', sans-serif; */
+}
+
+body {
+
+    background: rgb(112, 120, 142);
+    background: radial-gradient(circle, rgba(112, 120, 142, 1) 0%, rgba(89, 85, 105, 1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Buttons */
+
+button {
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(44 44 139);
+    box-shadow: 2px 3px 5px #464040b5;
+    margin: 5px;
+    transition: all 300ms;
+    font-family: 'Roboto Light';
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(60, 60, 136);
+    box-shadow: 2px 3px 5px #2e2b2b
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background-color: rgb(94, 94, 106);
+    box-shadow: 2px 3px 5px #464040b5;
+}
+
+/* Inputs */
+
+label{
+    color:white;
+    font-family: 'Roboto Light';
+    font-size: 25px;
+}
+
+input{
+    box-shadow: 2px 3px 5px #464040b5;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 800px;
+    font-family: 'Roboto Light';
+}
+
+select:hover, input:hover{
+    box-shadow: 2px 3px 5px #2e2b2b
+}
+
+select{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 300ms;
+}
+
+#url-form{
+    margin:30px;
+    display: flex;
+}
+
+#generate-palette-form{
+    margin:30px;
+    display: flex;
+}
+
+#img-rendered-container{
+    margin:30px;
+    height: 300px;
+    width: 500px;
+    background-color: #ededed1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#palette-container{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#palette-container div{
+    display: flex;
+    align-items: flex-end;
+    width: 180px;
+    height: 180px;
+}
+
+#palette-container div p {
+    background: linear-gradient(to top, #3e3e3eb3, #343434b0, #3e3e3ea6, #6464646b, #ffffff00);    height: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}

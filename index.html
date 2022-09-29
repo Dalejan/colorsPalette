@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+  <py-env>
+    - numpy
+    - Pillow
+    - scikit-learn
+    - paths:
+      - ./loadFile.py
+      - ./generatePalette.py
+  </py-env>
+
+</head>
+
+<body>
+  <py-script src="./loadFile.py"></py-script>
+  <py-script src="./generatePalette.py"></py-script>
+
+  <!-- Test URL: https://media-cdn.tripadvisor.com/media/photo-s/15/f3/ec/20/20181231-115241-001-largejpg.jpg -->
+  <div id="url-form">
+    <input type="text" id="image-url-input" placeholder="Insert the url here">
+    <button id="uploadBtn"> Render Image </button>
+  </div>
+
+  <div id="img-rendered-container">
+    <p>Please upload your image 📸</p>
+  </div>
+
+  <label for="n_clusters">How may colors do you want?</label>
+  <div id="generate-palette-form">
+    <select name="n_clusters" id="n_clusters">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+
+    </select>
+    <button id="paletteBtn" pys-onClick="showPaletteDOM"> Generate Palette </button>
+  </div>
+
+  <div id="palette-container"></div>
+</body>
+
+</html>
