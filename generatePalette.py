@@ -7,10 +7,6 @@ def clustering(imageArray):
     cluster = KMeans(n_clusters = n_clusters)
     cluster.fit(imageArray)
 
-    #Index from 0 to n where n is the number of clusters
-    # labels=cluster.labels_
-    # labels=list(labels)
-
     #Cluster centroids values (center of cluster)
     centroids=cluster.cluster_centers_
     return centroids
