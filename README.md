@@ -1,5 +1,5 @@
 <h1 align="center">
-     Color Palette Generator with Machine Learningf
+     Color Palette Generator with Machine Learning
   <br>
 </h1>
 
